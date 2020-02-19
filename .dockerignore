@@ -1,0 +1,16 @@
+# VCS
+.git*
+
+# IDEs
+.idea
+
+# Environment
+.env
+
+# Go
+pkg
+
+# Repo
+Makefile
+README.md
+docker-compose.yml
