@@ -18,4 +18,4 @@ This is an unpolished experiment in drafting the skeleton for a containerized se
 * Learn how to structure properly middleware for routes
 * Settle for a http client/router
 * Implement failsafes if we communicate with external services
-* Current build approach for the go binary makes no sense; either one disables CGO with the environment variable, _or_ uses the many flags after `go build`
+* Current build approach for the go binary makes no sense; either one disables CGO with the environment variable, _or_ uses the many flags after `go build` (see https://github.com/golang/go/issues/26492)
