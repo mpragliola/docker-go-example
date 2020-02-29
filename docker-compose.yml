@@ -2,8 +2,10 @@ version: '3.5'
 
 services: 
   application:
+    env_file: .env
     build:
       context: .
       dockerfile: ./docker/Dockerfile
     ports:
       - "${SERVICE_EXTERNAL_PORT}:${SERVICE_INTERNAL_PORT}"
+

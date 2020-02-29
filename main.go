@@ -16,7 +16,7 @@ func main() {
 	r := mux.NewRouter()
 	r.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
 		w.WriteHeader(http.StatusOK)
-		fmt.Fprintf(w, "Bestia immane")
+		fmt.Fprintf(w, "Hello world")
 	})
 
 	http.Handle("/", r)
@@ -34,7 +34,7 @@ func main() {
 func initializeService() {
 	log.Println(fmt.Sprintf("Service started [PID %d]", os.Getpid()))
 
-	err := godotenv.Load("../.env")
+	err := godotenv.Load()
 	if err != nil {
 		log.Print("No .env file, using env variables as they are")
 	}
